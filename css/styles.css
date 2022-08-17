@@ -188,3 +188,47 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.container#formIngreso *{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#imageLogin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#email {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+#password {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+
+#botonIngreso {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0087F7;
+  border: #fff;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+}
