@@ -1,3 +1,4 @@
+
 let productsArray = [];
 //función que recibe un array con los datos, y los muestra en pantalla a través el uso del DOM
 function showProductsList(array){
@@ -30,10 +31,10 @@ function showProductsList(array){
 
 
     document.addEventListener("DOMContentLoaded", function(){
+        const LIST_URL = "https://japceibal.github.io/emercado-api/cats_products/" + localStorage.getItem("catID") + ".json";
         getJSONData(LIST_URL).then(function(resultObj){
             if (resultObj.status === "ok")
             {   productsArray = resultObj.data.products;
-                console.log(productsArray)
                 showProductsList(productsArray);
             }
         });
