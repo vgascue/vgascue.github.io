@@ -39,10 +39,23 @@
   <main class="pb-5 container">
     <div class="text-center p-4">
       <h2>Productos</h2>
-      <p>Verás aquí todos los productos de la categoría Autos</p>
+      <p id="subtituloCategoria"></p>
   </div>
     <div class="container">
       <div class="row">
+        <div>
+         <div id="orden">
+          <button id="Pdescendente">&#129041; $</button>
+          <button id="Pascendente">&#129043; $</button>
+          <button id="Relevancia">Rel &#129043; </button>
+         </div>
+         
+          <div id="filtros">Precio <input type="number" id="minimo"> 
+            <input type="number" id="maximo" > 
+            <button id="filtrar"> Filtrar </button>
+          <button id="limpiar"> Limpiar</button>
+          </div>
+        </div>
         <div class="list-group" id="prod-list-container">
 
         </div>

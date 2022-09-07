@@ -236,3 +236,34 @@ a.custom-card:hover {
 #userID{
   color: #fff;
 }
+
+#filtros{
+  margin-left: 45%;
+  align-content: right;
+}
+
+#filtrar{
+  background-color: #fff;
+  border-color: #fff;
+  color: black;
+  border-radius: 5px;
+}
+
+#limpiar{
+  background-color: #d95942;
+  border-color:#fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#orden{
+  margin-left: 85%;
+  align-content: right;
+  margin-bottom: 1%;
+}
+#orden button{
+  background-color: rgb(209, 209, 209);
+  border-color: #fff;
+  color: black;
+  border-radius: 5px;
+}
