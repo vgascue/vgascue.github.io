@@ -10,6 +10,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="js/product-info.js"></script>
 </head>
 
 <body>
@@ -30,19 +31,61 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id='user'>
+            
           </li>
+      
         </ul>
       </div>
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+    <div class="container-flex justify-content-center" id="Producto">
+
     </div>
+    <div class="d-flex justify-content-center">
+    <div class="row">
+      <div class="col-md-6" id="prodRelacionados">
+        <h2> Productos relacionados </h2>
+        </div>
+    <div class="col-md-6" id="Comentarios">
+      <h2> Comentarios</h2>
+    </div>
+  </div>
+</div>
+
+    <div class="container-flex justify-content-center" id="NuevoComentario">
+     <div class="row justify-content-start">
+      <div class="col-md-4 offset-md-2">
+      <h2>Comentar</h2>
+    </div>
+    </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+      <h4>Tu opinión:</h4>
+      <textarea class="form-control" id="descripcion" style="width: 18rem;"></textarea>
+    </div>
+    <div class="col-md-4">
+      <h4>Tu puntuación:</h4>
+      <select class="form-control" id="scoreProd" required style="width: 18rem;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row align-content-end">
+  <div class="col-md-4 offset-md-2" style="margin-top: 1rem;">
+      <button type="submit" class="btn btn-primary" id="EnviarComentario">Envíar</button>
+    </div>
+</div>
+  
   </main>
+    
+  
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
@@ -63,7 +106,7 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/product-info.js"></script>
+  
 </body>
 
 </html>
